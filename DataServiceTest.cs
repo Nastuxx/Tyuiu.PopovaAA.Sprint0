@@ -1,16 +1,14 @@
-using Tyuiu.PopovaAA.Sprint0.Task2.V0.Lib;
+using Tyuiu.PopovaAA.Sprint0.Task3.V0.Lib;
 
-namespace Tyuiu.PopovaAA.Sprint0.Task2.V0.Test
+namespace Tyuiu.PopovaAA.Sprint0.Task3.V0.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckGetMessageValid()
+        public void CheckedValid()
         {
-            var name = "Настя";
-            var res = DataService.GetMessage(name);
-            Assert.AreEqual("Привет, Настя", res);
+            Assert.AreEqual(10, DataService.Sum(5, 5));
         }
     }
 }
