@@ -5,7 +5,6 @@ namespace Tyuiu.PopovaAA.Sprint0.Task2.V0
     {
         static void Main(string[] args)
         {
-            //Вызов класса DataService и метода GetMessage из библиотеки Tyuiu.PopovaAA.Sprint0.Task2.V0.Lib
             Console.WriteLine(DataService.GetMessage("Настя"));
             Console.ReadKey();
         }
