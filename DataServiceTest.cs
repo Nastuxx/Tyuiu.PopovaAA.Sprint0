@@ -8,12 +8,9 @@ namespace Tyuiu.PopovaAA.Sprint0.Task2.V0.Test
         [TestMethod]
         public void CheckGetMessageValid()
         {
-            //Область создания методов тестирования, методов из библиотеки
-            var name = "Настя";
+            var name = "РќР°СЃС‚СЏ";
             var res = DataService.GetMessage(name);
-
-            //Вызываем класс Assert и метод AreEqual
-            Assert.AreEqual("Привет, Настя", res);
+            Assert.AreEqual("РџСЂРёРІРµС‚, РќР°СЃС‚СЏ", res);
         }
     }
 }
