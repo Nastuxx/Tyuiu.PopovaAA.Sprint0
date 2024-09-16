@@ -1,14 +1,32 @@
-using Tyuiu.PopovaAA.Sprint0.Task3.V0.Lib;
+using Tyuiu.PopovaAA.Sprint0.Task4.V0.Lib;
 
-namespace Tyuiu.PopovaAA.Sprint0.Task3.V0.Test
+namespace Tyuiu.PopovaAA.Sprint0.Task4.V0.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckedValid()
+        public void CheckedAdditionValid()
         {
-            Assert.AreEqual(10, DataService.Sum(5, 5));
+            Assert.AreEqual(10, DataService.Addition(5, 5));
+        }
+
+        [TestMethod]
+        public void CheckedSubtractionValid()
+        {
+            Assert.AreEqual(5, DataService.Subtraction(10, 5));
+        }
+
+        [TestMethod]
+        public void CheckedMultiplicationValid()
+        {
+            Assert.AreEqual(50, DataService.Multiplication(10, 5));
+        }
+
+        [TestMethod]
+        public void CheckedDivisionValid()
+        {
+            Assert.AreEqual(3, DataService.Division(9, 3));
         }
     }
 }
