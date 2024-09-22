@@ -1,32 +1,19 @@
-using Tyuiu.PopovaAA.Sprint0.Task6.V0.Lib;
+using Tyuiu.PopovaAA.Sprint0.Task7.V0.Lib;
 
-namespace Tyuiu.PopovaAA.Sprint0.Task6.V0.Test
+namespace Tyuiu.PopovaAA.Sprint0.Task7.V0.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckAdditionArrayValid()
+        public void CheckAdditionArraysValid()
         {
-            var numbers = new int [] { 1, 2, 3, 4, 5 };
-            var res = DataService.AdditionArray(numbers);
-            Assert.AreEqual(15, res);
-        }
+            int[] nums1 = new int[] { 1, 1, 1, 1, 1 };
+            int[] nums2 = new int[] { 1, 1, 1, 1, 1 };
+            int[] nums3 = new int[] { 2, 2, 2, 2, 2 };
 
-        [TestMethod]
-        public void CheckSubtractionArrayValid()
-        {
-            var numbers = new int[] { 1, 2, 3, 4, 5 };
-            var res = DataService.SubtractionArray(numbers);
-            Assert.AreEqual(-15, res);
-        }
-
-        [TestMethod]
-        public void CheckMultiplicationArrayValid()
-        {
-            var numbers = new int[] { 1, 2, 3, 4, 5 };
-            var res = DataService.MultiplicationArray(numbers);
-            Assert.AreEqual(120, res);
+            int[] res = DataService.AdditionArrays(nums1, nums2);
+            CollectionAssert.AreEqual(nums3, res);
         }
     }
 }
